@@ -656,7 +656,7 @@ namespace binpack
                     code |= stream.read_one_bit() << bits;
                     ++bits;
 
-                    assert(bits <= 6);
+                    //assert(bits <= 6);
 
                     for (pr = 0; pr <= static_cast<int>(chess::PieceType::None); ++pr)
                         if (huffman_table[pr].code == code
